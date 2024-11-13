@@ -1,0 +1,40 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos del cuerpo */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+    font-family: Arial, sans-serif;
+    color: #fff;
+}
+
+/* Contenedor principal */
+.container {
+    text-align: center;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Estilos de los textos */
+h1 {
+    margin-bottom: 20px;
+    font-size: 2em;
+}
+
+.info {
+    font-size: 1.2em;
+}
+
+p {
+    margin: 10px 0;
+}
