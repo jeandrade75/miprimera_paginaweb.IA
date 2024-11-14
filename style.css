@@ -8,27 +8,35 @@
 /* Estilos del cuerpo */
 body {
     font-family: Arial, sans-serif;
-    background: #e0f7ff;
-    color: #333;
+    background-color: #fff;
+    color: #000;
+}
+
+/* Encabezado */
+header {
+    text-align: center;
+    padding: 20px;
+}
+
+header h1 {
+    color: #003366; /* Azul oscuro */
+    font-size: 2em;
 }
 
 /* Barra de navegación */
-header {
-    background-color: #003366;
-    color: #fff;
-    padding: 10px 20px;
+nav {
     text-align: center;
+    margin-bottom: 20px;
 }
 
 nav ul {
     list-style: none;
-    display: flex;
-    justify-content: center;
+    display: inline-flex;
     gap: 20px;
 }
 
 nav a {
-    color: #fff;
+    color: #003366;
     text-decoration: none;
     font-weight: bold;
 }
@@ -37,27 +45,17 @@ nav a:hover {
     color: #ff3333;
 }
 
-/* Sección principal */
-.welcome {
-    text-align: center;
-    padding: 20px;
-    background: #006699;
-    color: #fff;
-    border-radius: 10px;
-    margin: 20px;
-}
-
 /* Entradas recientes */
 .recent-posts {
     padding: 20px;
-    background: #004080;
-    color: #fff;
+    background: #f0f0f0;
     border-radius: 10px;
-    margin: 20px;
+    margin: 20px auto;
+    max-width: 800px;
 }
 
 .post {
-    background: #0059b3;
+    background: #e6f2ff;
     padding: 15px;
     margin-bottom: 15px;
     border-radius: 8px;
@@ -79,7 +77,12 @@ nav a:hover {
 /* Footer */
 footer {
     text-align: center;
-    padding: 10px;
-    background-color: #003366;
-    color: #fff;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+#date-time,
+#location {
+    margin: 10px 0;
+    font-size: 1em;
 }
