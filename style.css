@@ -7,34 +7,79 @@
 
 /* Estilos del cuerpo */
 body {
+    font-family: Arial, sans-serif;
+    background: #e0f7ff;
+    color: #333;
+}
+
+/* Barra de navegación */
+header {
+    background-color: #003366;
+    color: #fff;
+    padding: 10px 20px;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
     display: flex;
     justify-content: center;
-    align-items: center;
-    height: 100vh;
-    background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
-    font-family: Arial, sans-serif;
-    color: #fff;
+    gap: 20px;
 }
 
-/* Contenedor principal */
-.container {
+nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #ff3333;
+}
+
+/* Sección principal */
+.welcome {
     text-align: center;
     padding: 20px;
-    background: rgba(0, 0, 0, 0.5);
+    background: #006699;
+    color: #fff;
     border-radius: 10px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    margin: 20px;
 }
 
-/* Estilos de los textos */
-h1 {
-    margin-bottom: 20px;
-    font-size: 2em;
+/* Entradas recientes */
+.recent-posts {
+    padding: 20px;
+    background: #004080;
+    color: #fff;
+    border-radius: 10px;
+    margin: 20px;
 }
 
-.info {
-    font-size: 1.2em;
+.post {
+    background: #0059b3;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 8px;
 }
 
-p {
-    margin: 10px 0;
+.btn-red {
+    display: inline-block;
+    padding: 10px 15px;
+    background-color: #ff3333;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.btn-red:hover {
+    background-color: #cc0000;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #003366;
+    color: #fff;
 }

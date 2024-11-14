@@ -24,7 +24,7 @@ function getLocation() {
                 const { latitude, longitude } = position.coords;
                 locationElement.textContent = `Ubicación: Latitud ${latitude.toFixed(2)}, Longitud ${longitude.toFixed(2)}`;
             },
-            (error) => {
+            () => {
                 locationElement.textContent = "No se pudo obtener la ubicación.";
             }
         );
@@ -37,5 +37,5 @@ function getLocation() {
 window.onload = () => {
     updateDateTime();
     getLocation();
-    setInterval(updateDateTime, 1000); // Actualizar la hora cada segundo
+    setInterval(updateDateTime, 1000);
 };

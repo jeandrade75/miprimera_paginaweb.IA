@@ -3,17 +3,53 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Página Moderna</title>
+    <title>Talento BAires Tech Blog</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container">
-        <h1>Bienvenido a mi página moderna</h1>
-        <div class="info">
+    <!-- Barra de navegación -->
+    <header>
+        <h1>Talento BAires Tech Blog</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Entradas</a></li>
+                <li><a href="#">Sobre Nosotros</a></li>
+                <li><a href="#">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Sección principal -->
+    <main>
+        <section class="welcome">
+            <h2>Bienvenido al Blog de Talento BAires Tech</h2>
             <p id="date-time"></p>
             <p id="location"></p>
-        </div>
-    </div>
+        </section>
+
+        <!-- Entradas recientes -->
+        <section class="recent-posts">
+            <h2>Entradas Recientes</h2>
+            <div class="post">
+                <h3>Título del Post 1</h3>
+                <p>Un breve resumen de la primera entrada del blog...</p>
+                <a href="#" class="btn-red">Leer más</a>
+            </div>
+            <div class="post">
+                <h3>Título del Post 2</h3>
+                <p>Un breve resumen de la segunda entrada del blog...</p>
+                <a href="#" class="btn-red">Leer más</a>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Talento BAires Tech. Todos los derechos reservados.</p>
+    </footer>
+
     <script src="script.js"></script>
 </body>
 </html>
+
