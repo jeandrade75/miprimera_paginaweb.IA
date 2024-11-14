@@ -8,10 +8,9 @@ function updateDateTime() {
         month: 'long',
         day: 'numeric',
         hour: '2-digit',
-        minute: '2-digit',
-        second: '2-digit'
+        minute: '2-digit'
     };
-    dateTimeElement.textContent = `Fecha y Hora: ${now.toLocaleString('es-ES', options)}`;
+    dateTimeElement.textContent = `Fecha y Hora:\n${now.toLocaleString('es-ES', options)}`;
 }
 
 // Obtener la ubicación del usuario
@@ -22,7 +21,7 @@ function getLocation() {
         navigator.geolocation.getCurrentPosition(
             (position) => {
                 const { latitude, longitude } = position.coords;
-                locationElement.textContent = `Ubicación: Latitud ${latitude.toFixed(2)}, Longitud ${longitude.toFixed(2)}`;
+                locationElement.textContent = `Ubicación:\nLatitud ${latitude.toFixed(2)}, Longitud ${longitude.toFixed(2)}`;
             },
             () => {
                 locationElement.textContent = "No se pudo obtener la ubicación.";
@@ -33,9 +32,29 @@ function getLocation() {
     }
 }
 
+// Funcionalidad para agregar una nueva entrada
+document.getElementById("new-post").addEventListener("click", () => {
+    const title = prompt("Ingrese el título de la nueva entrada:");
+    const content = prompt("Ingrese el contenido de la nueva entrada:");
+    if (title && content) {
+        const postContainer = document.getElementById("posts-container");
+        const postElement = document.createElement("div");
+        postElement.classList.add("post");
+        postElement.innerHTML = `<h3>${title}</h3><p>${content}</p>`;
+        postContainer.appendChild(postElement);
+    }
+});
+
+// Manejo del formulario de contacto
+document.getElementById("contact-form").addEventListener("submit", (event) => {
+    event.preventDefault();
+    alert("Gracias por tu mensaje. Nos pondremos en contacto contigo pronto.");
+});
+
 // Actualizar la fecha, hora y ubicación al cargar la página
 window.onload = () => {
     updateDateTime();
     getLocation();
     setInterval(updateDateTime, 1000);
 };
+
