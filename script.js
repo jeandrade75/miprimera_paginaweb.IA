@@ -32,6 +32,12 @@ function getLocation() {
     }
 }
 
+// Mostrar el formulario de contacto al hacer clic
+document.getElementById("contact-link").addEventListener("click", () => {
+    const contactSection = document.getElementById("contact");
+    contactSection.classList.toggle("hidden");
+});
+
 // Funcionalidad para agregar una nueva entrada
 document.getElementById("new-post").addEventListener("click", () => {
     const title = prompt("Ingrese el título de la nueva entrada:");
