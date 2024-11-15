@@ -131,6 +131,32 @@ footer {
     margin: 5px 0;
 }
 
+/* Estilo de la sección de redes sociales */
+.social-media {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.social-media a {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+}
+
+.social-media img {
+    width: 100%;
+    height: 100%;
+    filter: grayscale(100%);
+    transition: filter 0.3s, transform 0.3s;
+}
+
+.social-media img:hover {
+    filter: none;
+    transform: scale(1.1);
+}
+
 
 
 
