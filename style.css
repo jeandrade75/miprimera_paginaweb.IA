@@ -139,18 +139,26 @@ footer {
     margin-bottom: 10px;
 }
 
+/* Estilo del título de la sección de redes sociales */
+.social-title {
+    text-align: center;
+    color: #003366; /* Azul oscuro */
+    font-size: 1.2em; /* Tamaño aumentado */
+    margin-bottom: 10px;
+}
+
 /* Estilo de la sección de redes sociales */
 .social-media {
     display: flex;
     justify-content: center;
-    gap: 20px;
+    gap: 15px;
     margin-top: 10px;
 }
 
 .social-media a {
     display: inline-block;
-    width: 40px;
-    height: 40px;
+    width: 25px; /* Tamaño reducido */
+    height: 25px;
 }
 
 .social-media img {
@@ -163,13 +171,14 @@ footer {
     transform: scale(1.1);
 }
 
-/* Derechos de autor centrados y tamaño reducido */
+/* Derechos de autor centrados y tamaño aumentado */
 .copyright {
     text-align: center;
-    font-size: 0.6em; /* Tamaño reducido a la mitad */
-    color: #666666;
+    font-size: 0.9em; /* Tamaño aumentado */
+    color: #333333;
     margin-top: 20px;
 }
+
 
 
 
