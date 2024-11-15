@@ -38,18 +38,17 @@ document.getElementById("contact-link").addEventListener("click", () => {
     contactSection.classList.toggle("hidden");
 });
 
-// Funcionalidad para agregar una nueva entrada
-document.getElementById("new-post").addEventListener("click", () => {
-    const title = prompt("Ingrese el título de la nueva entrada:");
-    const content = prompt("Ingrese el contenido de la nueva entrada:");
-    if (title && content) {
-        const postContainer = document.getElementById("posts-container");
-        const postElement = document.createElement("div");
-        postElement.classList.add("post");
-        postElement.innerHTML = `<h3>${title}</h3><p>${content}</p>`;
-        postContainer.appendChild(postElement);
-    }
-});
+// Carrusel de imágenes
+let currentIndex = 0;
+const images = document.querySelectorAll('.carousel-image');
+
+function showNextImage() {
+    images[currentIndex].classList.remove('active');
+    currentIndex = (currentIndex + 1) % images.length;
+    images[currentIndex].classList.add('active');
+}
+
+setInterval(showNextImage, 3000);
 
 // Manejo del formulario de contacto
 document.getElementById("contact-form").addEventListener("submit", (event) => {
@@ -62,6 +61,8 @@ window.onload = () => {
     updateDateTime();
     getLocation();
     setInterval(updateDateTime, 1000);
+    images[0].classList.add('active');
 };
+
 
 
