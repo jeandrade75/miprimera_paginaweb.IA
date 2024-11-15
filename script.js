@@ -38,6 +38,18 @@ document.getElementById("contact-link").addEventListener("click", () => {
     contactSection.classList.toggle("hidden");
 });
 
+// Carrusel de imágenes
+let currentIndex = 0;
+const images = document.querySelectorAll('.carousel-image');
+
+function showNextImage() {
+    images[currentIndex].classList.remove('active');
+    currentIndex = (currentIndex + 1) % images.length;
+    images[currentIndex].classList.add('active');
+}
+
+setInterval(showNextImage, 3000);
+
 // Manejo del formulario de contacto
 document.getElementById("contact-form").addEventListener("submit", (event) => {
     event.preventDefault();
@@ -49,7 +61,9 @@ window.onload = () => {
     updateDateTime();
     getLocation();
     setInterval(updateDateTime, 1000);
+    images[0].classList.add('active');
 };
+
 
 
 
