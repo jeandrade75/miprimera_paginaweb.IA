@@ -1,97 +1,126 @@
-/* Reset básico */
-* {
+/* Estilo general */
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #ffffff;
+    color: #333333;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
 }
 
-body {
-    font-family: Arial, sans-serif;
-    background-color: #fff;
-    color: #000;
-}
-
+/* Header */
 header {
     text-align: center;
     padding: 20px;
+    background-color: #f0f0f0;
 }
 
 header h1 {
     color: #003366;
-    font-size: 2em;
+    font-size: 2.5em;
 }
 
-/* Barra de navegación */
+/* Navbar */
 nav {
-    text-align: center;
-    margin-bottom: 20px;
+    background-color: #003366;
+    padding: 10px 0;
 }
 
 nav ul {
-    list-style: none;
-    display: inline-flex;
-    gap: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
 }
 
 nav a {
     color: #ff3333;
-    text-decoration: none;
     font-weight: bold;
+    text-decoration: none;
+    padding: 5px 10px;
+    transition: color 0.3s;
 }
 
 nav a:hover {
-    color: #cc0000;
+    color: #ff6666;
 }
 
+/* Entradas recientes */
 .recent-posts {
-    padding: 20px;
-    margin: 20px auto;
+    padding: 40px;
     max-width: 800px;
+    margin: 0 auto;
+    text-align: left;
 }
 
-/* Estilos para el carrusel */
-.carousel {
-    display: flex;
-    overflow: hidden;
-    width: 100%;
-    max-width: 800px;
-    margin: 0 auto 20px;
-    position: relative;
+.recent-posts h2 {
+    color: #003366;
+    font-size: 2em;
+    margin-bottom: 20px;
 }
 
-.carousel-image {
-    width: 100%;
-    height: auto;
-    display: none;
+.post h3 {
+    color: #ff3333;
+    font-size: 1.5em;
+    margin-bottom: 10px;
 }
 
-.carousel-image.active {
-    display: block;
+.post p {
+    font-size: 1em;
+    line-height: 1.6;
 }
 
-/* Estilo del formulario de contacto */
-#contact {
-    padding: 20px;
+/* Formulario de contacto */
+.contact-form {
+    padding: 40px;
     max-width: 600px;
-    margin: 20px auto;
+    margin: 0 auto;
 }
 
-.hidden {
-    display: none;
+.contact-form h2 {
+    color: #003366;
 }
 
+#contact-form label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+#contact-form input,
+#contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #ff3333;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background-color: #cc0000;
+}
+
+/* Footer */
 footer {
     text-align: center;
     padding: 20px;
-    font-size: 0.7em;
-    line-height: 1.2;
+    background-color: #f0f0f0;
+    font-size: 0.8em;
 }
 
 #date-time,
 #location {
     margin: 5px 0;
-    font-size: 0.7em;
 }
+
 
 
 
