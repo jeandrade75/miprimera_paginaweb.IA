@@ -7,12 +7,10 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- Encabezado con mensaje de bienvenida -->
     <header>
-        <h1>Bienvenido al Blog de Talento BAires Tech</h1>
+        <h1>Bienvenido al Blog de Talento BAires IT</h1>
     </header>
 
-    <!-- Barra de navegación -->
     <nav>
         <ul>
             <li><a href="#" id="home">Inicio</a></li>
@@ -22,24 +20,22 @@
         </ul>
     </nav>
 
-    <!-- Sección principal -->
     <main>
         <section class="recent-posts">
             <h2>Entradas Recientes</h2>
 
             <!-- Carrusel de imágenes -->
-            <div class="carousel">
-                <img src="images/professional1.jpg" alt="Trabajo en equipo" class="carousel-image">
-                <img src="images/professional2.jpg" alt="Reunión profesional" class="carousel-image">
-                <img src="images/professional3.jpg" alt="Planificación de proyectos" class="carousel-image">
+            <div class="carousel-container">
+                <div class="carousel-slide">
+                    <img src="images/professional1.jpg" alt="Trabajo en equipo">
+                    <img src="images/professional2.jpg" alt="Reunión profesional">
+                    <img src="images/professional3.jpg" alt="Planificación de proyectos">
+                </div>
             </div>
 
-            <div id="posts-container">
-                <!-- Aquí se mostrarán las entradas del blog -->
-            </div>
+            <div id="posts-container"></div>
         </section>
 
-        <!-- Formulario de contacto (oculto inicialmente) -->
         <section id="contact" class="hidden">
             <h2>Contacto</h2>
             <form id="contact-form">
@@ -57,7 +53,6 @@
         </section>
     </main>
 
-    <!-- Información de fecha, hora y ubicación -->
     <footer>
         <div id="date-time"></div>
         <div id="location"></div>
@@ -67,6 +62,7 @@
     <script src="script.js"></script>
 </body>
 </html>
+
 
 
 
