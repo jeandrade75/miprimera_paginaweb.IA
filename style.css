@@ -7,16 +7,50 @@ body {
     padding: 0;
 }
 
-/* Header */
+/* Estilos del encabezado */
 header {
-    text-align: center;
     padding: 20px;
-    background-color: #f0f0f0;
+    background-color: #fff;
 }
 
-header h1 {
-    color: #003366;
+/* Contenedor principal del header */
+.header-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Estilo del contenedor del logo */
+.logo-container {
+    flex: 0 0 auto;
+}
+
+/* Estilo del logo */
+.logo {
+    width: 100px; /* Ajusta el tamaño del logo según sea necesario */
+    height: auto;
+}
+
+/* Estilo del contenedor de texto */
+.text-container {
+    flex: 1;
+    text-align: center;
+}
+
+/* Estilo del título */
+.text-container h1 {
+    color: #003366; /* Azul oscuro */
     font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+/* Estilo del subtítulo */
+.subtitle {
+    color: #555;
+    font-size: 1.2em;
+    margin-top: 10px; /* Añade espacio entre el título y el subtítulo */
 }
 
 /* Menú de navegación horizontal */
@@ -142,7 +176,7 @@ footer {
 /* Estilo del título de la sección de redes sociales */
 .social-title {
     text-align: center;
-    color: #003366; /* Azul oscuro */
+    color: #e92a08; /* Azul oscuro */
     font-size: 1.2em; /* Tamaño aumentado */
     margin-bottom: 10px;
 }
@@ -151,7 +185,7 @@ footer {
 .social-media {
     display: flex;
     justify-content: center;
-    gap: 15px;
+    gap: 20px;
     margin-top: 10px;
 }
 
@@ -239,6 +273,9 @@ button {
 button:hover {
     background-color: #0055a5;
 }
+
+
+
 
 
 
