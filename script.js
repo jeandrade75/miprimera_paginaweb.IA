@@ -36,6 +36,28 @@ window.onload = () => {
     getLocation();
     setInterval(updateDateTime, 60000);
 };
+// JavaScript para manejar el formulario modal
+const uploadCvLink = document.getElementById('upload-cv-link');
+const cvModal = document.getElementById('cv-modal');
+const closeBtn = document.querySelector('.close-btn');
+
+// Mostrar el modal al hacer clic en "Cargá tu CV"
+uploadCvLink.addEventListener('click', (event) => {
+    event.preventDefault();
+    cvModal.style.display = 'flex';
+});
+
+// Cerrar el modal al hacer clic en la "X"
+closeBtn.addEventListener('click', () => {
+    cvModal.style.display = 'none';
+});
+
+// Cerrar el modal al hacer clic fuera del contenido
+window.addEventListener('click', (event) => {
+    if (event.target === cvModal) {
+        cvModal.style.display = 'none';
+    }
+});
 
 
 
