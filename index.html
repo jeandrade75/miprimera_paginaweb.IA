@@ -1,98 +1,110 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blog Talento BAires Tech</title>
-
-    <!-- Enlace al archivo de estilos CSS -->
+    <title>Talento BAires Tech Blog</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-    <!-- Barra de navegación -->
+    <header>
+        <h1>Bienvenido al Blog de Talento BAires IT</h1>
+    </header>
+
+    <!-- Menú de navegación horizontal -->
     <nav>
-        <ul>
-            <li><a href="#">Inicio</a></li>
-            <li><a href="#">Entradas</a></li>
+        <ul class="navbar">
+            <li><a href="#" id="home">Inicio</a></li>
+            <li><a href="#" id="new-post">Entradas</a></li>
             <li><a href="https://linktr.ee/talentobaires" target="_blank">Sobre Nosotros</a></li>
             <li><a href="#" id="contact-link">Contacto</a></li>
-            <li><a href="#" id="upload-cv-link">Cargá tu CV</a></li> <!-- Nueva sección -->
+            <li><a href="#" id="upload-cv-link">Cargá tu CV</a></li> <!-- Nuevo enlace -->
         </ul>
     </nav>
 
-    <!-- Contenido principal de la página -->
-    <header>
-        <h1>Bienvenido al Blog de Talento BAires Tech</h1>
-        <p>Explora nuestras últimas entradas y mantente al día con nuestras novedades.</p>
-    </header>
-
-    <!-- Sección de Entradas Recientes -->
-    <section id="recent-posts">
-        <h2>Entradas Recientes</h2>
-        <div class="carousel">
-            <!-- Carrusel de imágenes relacionadas con vida profesional -->
-            <div class="carousel-item"><img src="images/career1.jpg" alt="Imagen 1"></div>
-            <div class="carousel-item"><img src="images/career2.jpg" alt="Imagen 2"></div>
-            <div class="carousel-item"><img src="images/career3.jpg" alt="Imagen 3"></div>
-        </div>
-    </section>
-
     <!-- Formulario modal para cargar el CV -->
-    <div id="cv-modal" class="modal">
-        <div class="modal-content">
-            <span class="close-btn">&times;</span>
-            <h2>Cargá tu CV</h2>
-            <form id="cv-form">
-                <label for="name">Nombre Completo:</label>
+<div id="cv-modal" class="modal">
+    <div class="modal-content">
+        <span class="close-btn">&times;</span>
+        <h2>Cargá tu CV</h2>
+        <form id="cv-form">
+            <label for="name">Nombre Completo:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Correo Electrónico:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="phone">Teléfono:</label>
+            <input type="tel" id="phone" name="phone" required>
+
+            <label for="cv-file">Adjuntar CV:</label>
+            <input type="file" id="cv-file" name="cv-file" accept=".pdf,.doc,.docx" required>
+
+            <button type="submit">Enviar</button>
+        </form>
+    </div>
+</div>
+
+
+    <main>
+        <section class="recent-posts">
+            <h2>Entradas Recientes</h2>
+            <div class="post">
+                <h3>Primer Entrada del Blog</h3>
+                <p>Exploramos las últimas tendencias en tecnología y desarrollo profesional.</p>
+            </div>
+        </section>
+
+        <section id="contact" class="contact-form">
+            <h2>Contacto</h2>
+            <form id="contact-form">
+                <label for="name">Nombre:</label>
                 <input type="text" id="name" name="name" required>
 
                 <label for="email">Correo Electrónico:</label>
                 <input type="email" id="email" name="email" required>
 
-                <label for="phone">Teléfono:</label>
-                <input type="tel" id="phone" name="phone" required>
-
-                <label for="cv-file">Adjuntar CV:</label>
-                <input type="file" id="cv-file" name="cv-file" accept=".pdf,.doc,.docx" required>
+                <label for="message">Mensaje:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
 
                 <button type="submit">Enviar</button>
             </form>
-        </div>
-    </div>
-
-    <!-- Sección de redes sociales -->
-    <footer>
-        <section class="social-media-section">
-            <h3 class="social-title">Redes Sociales</h3>
-            <div class="social-media">
-                <a href="https://www.instagram.com/talentobaires/" target="_blank" aria-label="Instagram">
-                    <img src="icons/instagram.svg" alt="Instagram">
-                </a>
-                <a href="https://x.com/talentoBAires" target="_blank" aria-label="Twitter">
-                    <img src="icons/twitter.svg" alt="Twitter">
-                </a>
-                <a href="https://www.facebook.com/talentobaires" target="_blank" aria-label="Facebook">
-                    <img src="icons/facebook.svg" alt="Facebook">
-                </a>
-                <a href="https://www.linkedin.com/company/talentobaires" target="_blank" aria-label="LinkedIn">
-                    <img src="icons/linkedin.svg" alt="LinkedIn">
-                </a>
-            </div>
         </section>
+    </main>
 
-        <!-- Derechos de autor -->
+    <footer>
+        <div id="date-time"></div>
+        <div id="location"></div>
+    
+        <!-- Subtítulo de redes sociales -->
+        <h3 class="social-title">Redes Sociales</h3>
+    
+        <!-- Sección de redes sociales -->
+        <div class="social-media">
+            <a href="https://www.instagram.com/talentobaires/" target="_blank" aria-label="Instagram">
+                <img src="icons/instagram.ico" alt="Instagram">
+            </a>
+            <a href="https://x.com/talentoBAires" target="_blank" aria-label="Twitter">
+                <img src="icons/twitter.ico" alt="Twitter">
+            </a>
+            <a href="https://www.facebook.com/talentobaires" target="_blank" aria-label="Facebook">
+                <img src="icons/facebook.ico" alt="Facebook">
+            </a>
+            <a href="https://www.linkedin.com/company/talentobaires" target="_blank" aria-label="LinkedIn">
+                <img src="icons/linkedin.ico" alt="LinkedIn">
+            </a>
+        </div>
+    
+        <!-- Derechos de autor centrados y con tamaño aumentado -->
         <div class="copyright">
-            <p>&copy; 2024 Talento BAires Tech. Todos los derechos reservados.</p>
+            &copy; 2024 Talento BAires Tech. Todos los derechos reservados.
         </div>
     </footer>
-
-    <!-- Enlace al archivo JavaScript -->
-    <script src="script.js"></script>
-</body>
-
-</html>
+    
+    
+    
+    
 
 
 
