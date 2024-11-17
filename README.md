@@ -1,6 +1,6 @@
 # 📝 Blog Talento BAires Tech
 
-¡Bienvenido al Blog de Talento BAires Tech! 🎉
+# ¡Bienvenido al Blog de Talento BAires Tech! 🎉
 
 Este proyecto es una página web de formato blog desarrollada para Talento BAires Tech, donde se presentan las últimas entradas y novedades sobre temas relacionados con el ámbito profesional y tecnológico. El diseño es moderno y limpio, utilizando tonalidades de azul, blanco y rojo para reflejar la identidad de la marca.
 
@@ -26,7 +26,8 @@ Este proyecto es una página web de formato blog desarrollada para Talento BAire
 - Página principal ├── style.css 
 - Estilos de la página ├── script.js 
 - Funciones de JavaScript ├── images/ 
-- Imágenes y logos └── README.md # Archivo de documentación
+- Imágenes y logos └── README.md
+- Archivo de documentación
 
 
 ## 📋 Instrucciones para usar el proyecto
@@ -42,11 +43,12 @@ Puedes ver una demostración del proyecto aquí.
 - Formulario de contacto dinámico: El formulario se muestra solo al hacer clic en la opción "Contacto" en el menú.
 - Carrusel de imágenes: Rotativo y automático, con imágenes relacionadas a la vida profesional.
 - Carga de CV: Permite adjuntar un archivo y enviar datos básicos.
+
   
 🖼️ Capturas de pantalla
 ## Vista de la página principal
 
-Formulario de contacto
+## Formulario de contacto
 
 🔗 Redes sociales
 - Instagram
