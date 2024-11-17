@@ -22,10 +22,11 @@ Este proyecto es una página web de formato blog desarrollada para Talento BAire
 
 ## 📂 Estructura del proyecto
 
-talento-baires-blog/ ├── index.html 
-# Página principal ├── style.css 
-# Estilos de la página ├── script.js 
-# Funciones de JavaScript ├── images/ # Imágenes y logos └── README.md # Archivo de documentación
+- talento-baires-blog/ ├── index.html 
+- Página principal ├── style.css 
+- Estilos de la página ├── script.js 
+- Funciones de JavaScript ├── images/ 
+- Imágenes y logos └── README.md # Archivo de documentación
 
 
 ## 📋 Instrucciones para usar el proyecto
@@ -48,16 +49,16 @@ Puedes ver una demostración del proyecto aquí.
 Formulario de contacto
 
 🔗 Redes sociales
-## Instagram
-## Twitter
-## Facebook
-## LinkedIn
+- Instagram
+- Twitter
+- Facebook
+- LinkedIn
 
 📝 Licencia
-## Este proyecto está bajo la Licencia MIT. Para más detalles, consulta el archivo LICENSE.
+- Este proyecto está bajo la Licencia MIT. Para más detalles, consulta el archivo LICENSE.
 
 🤝 Contribuciones
-## ¡Las contribuciones son bienvenidas! Si deseas mejorar algo o agregar nuevas funcionalidades, no dudes en hacer un fork del proyecto y enviar un pull request.
+- ¡Las contribuciones son bienvenidas! Si deseas mejorar algo o agregar nuevas funcionalidades, no dudes en hacer un fork del proyecto y enviar un pull request.
 
 - Haz un fork del proyecto.
 - Crea una nueva rama (git checkout -b feature/nueva-funcionalidad).
@@ -66,4 +67,4 @@ Formulario de contacto
 - Abre un pull request.
 
 📧 Contacto
-## Si tienes preguntas o sugerencias, puedes contactarnos a través de nuestras redes sociales o enviar un email a: talentobaires@gmail.com
+- Si tienes preguntas o sugerencias, puedes contactarnos a través de nuestras redes sociales o enviar un email a: talentobaires@gmail.com
