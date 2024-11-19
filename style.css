@@ -9,7 +9,7 @@ body {
 
 /* Estilos del encabezado */
 header {
-    padding: 20px;
+    padding: 15px;
     background-color: #fff;
 }
 
@@ -18,7 +18,7 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    max-width: 1200px;
+    max-width: 1400px;
     margin: 0 auto;
 }
 
@@ -29,7 +29,7 @@ header {
 
 /* Estilo del logo */
 .logo {
-    width: 100px; /* Ajusta el tamaño del logo según sea necesario */
+    width: 200px; /* Ajusta el tamaño del logo según sea necesario */
     height: auto;
 }
 
@@ -56,14 +56,14 @@ header {
 /* Menú de navegación horizontal */
 nav {
     background-color: #ffffff;
-    padding: 10px 0;
+    padding: 5px 0;
     border-bottom: 2px solid #003366;
 }
 
 .navbar {
     display: flex;
     justify-content: center;
-    gap: 40px;
+    gap: 10px;
     list-style: none;
     padding: 0;
     margin: 0;
@@ -78,7 +78,7 @@ nav {
     font-weight: bold;
     text-decoration: none;
     padding: 10px 20px;
-    border-radius: 5px;
+    border-radius: 10px;
     transition: background 0.3s;
 }
 
