@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Talento BAires Tech Blog</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<!-- Encabezado -->
+<header>
+    <div class="header-content">
+        <div class="logo-container">
+            <img src="images/logo-talento-baires.png" alt="Logo Talento BAires Tech" class="logo">
+        </div>
+        <div class="text-container">
+            <h1>Bienvenido al Blog de Talento BAires Tech</h1>
+            <p class="subtitle">Explora nuestras últimas entradas y mantente al día con nuestras novedades.</p>
+        </div>
+    </div>
+</header>
+
+
+    
+    <!-- Menú de navegación horizontal -->
+    <nav>
+        <ul class="navbar">
+            <li><a href="#" id="home">Inicio</a></li>
+            <li><a href="#" id="new-post">Entradas</a></li>
+            <li><a href="https://linktr.ee/talentobaires" target="_blank">Sobre Nosotros</a></li>
+            <li><a href="#" id="contact-link">Contacto</a></li>
+            <li><a href="#" id="upload-cv-link">Cargá tu CV</a></li> <!-- Nuevo enlace -->
+        </ul>
+    </nav>
+    
+
+    <!-- Formulario modal para cargar el CV -->
+<div id="cv-modal" class="modal">
+    <div class="modal-content">
+        <span class="close-btn">&times;</span>
+        <h2>Cargá tu CV</h2>
+        <form id="cv-form">
+            <label for="name">Nombre Completo:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Correo Electrónico:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="phone">Teléfono:</label>
+            <input type="tel" id="phone" name="phone" required>
+
+            <label for="cv-file">Adjuntar CV:</label>
+            <input type="file" id="cv-file" name="cv-file" accept=".pdf,.doc,.docx" required>
+
+            <button type="submit">Enviar</button>
+        </form>
+    </div>
+</div>
+
+
+    <main>
+        <section class="recent-posts">
+            <h2>Entradas Recientes</h2>
+            <div class="post">
+                <h3>Primer Entrada del Blog</h3>
+                <p>Exploramos las últimas tendencias en tecnología y desarrollo profesional.</p>
+            </div>
+        </section>
+
+        <section id="contact" class="contact-form">
+            <h2>Contacto</h2>
+            <form id="contact-form">
+                <label for="name">Nombre:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Correo Electrónico:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Mensaje:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+    </main>
+
+<!-- Pie de página -->
+<footer>
+    <h2 class="social-title">Redes Sociales</h2>
+    <div class="social-media">
+        <a href="https://www.instagram.com/talentobaires/" target="_blank">
+            <img src="icons/instagram.ico" alt="Instagram">
+        </a>
+        <a href="https://x.com/talentoBAires" target="_blank">
+            <img src="icons/twitter.ico" alt="Twitter">
+        </a>
+        <a href="https://www.facebook.com/talentobaires" target="_blank">
+            <img src="icons/facebook.ico" alt="Facebook">
+        </a>
+        <a href="https://www.linkedin.com/company/talentobaires" target="_blank">
+            <img src="icons/linkedin.ico" alt="LinkedIn">
+        </a>
+    </div>
+    <p class="footer-text">© 2024 Talento BAires Tech. Todos los derechos reservados.</p>
+</footer>
+
+    
+    
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+
