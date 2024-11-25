@@ -6,10 +6,25 @@
   <title>Registro de Usuario</title>
 </head>
 <body>
+  
+  <!-- Incluyendo el archivo nav.ejs -->
+  <%- include("nav") %>
 
     <h1>Registro de Usuario</h1>
+
+    <% if(typeof mensaje !=="undefined"){ %>
+      <p>
+          <%= mensaje %>;
+      </p>
+    <% } %>
   
   <form action="/registro" method="post">
+
+    <!-- Campo para el Documento -->
+    <div>
+      <label for="Documento">Documento:</label>
+      <input type="Documento" id="Documento" name="Documento" required>
+    </div>  
 
     <!-- Campo para el nombre -->
     <div>
@@ -22,6 +37,13 @@
       <label for="email">Correo electrónico:</label>
       <input type="email" id="email" name="email" required>
     </div>
+
+    <!-- Campo para el correo telefono -->
+    <div>
+      <label for="telefono">Telefono:</label>
+      <input type="telefono" id="telefono" name="telefono" required>
+    </div>  
+
     
     <!-- Campo para la contraseña -->
     <div>
@@ -36,3 +58,4 @@
   </form>
 </body>
 </html>
+
