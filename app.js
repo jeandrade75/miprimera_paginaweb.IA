@@ -1,5 +1,6 @@
 // Importar la libreria :::::::::::::::::::::::::
 const express = require ("express");
+const session = require("express-session");
 
 const mysql = require("mysql2");
 
@@ -14,9 +15,18 @@ const conexion = mysql.createConnection({
     });
 
 // Configuración del middleware ::::::::::::::::::::::::::::::::
-app.use(express.static("public")); // Archivos estáticos
+app.use(express.static("public")); // Archivos estáticosxa
 app.use(express.json()); // Para procesar JSON en el cuerpo de las solicitudes (requerido para req.body)
 app.use(express.urlencoded({ extended: false })); // Para procesar datos de formularios
+
+// Manejo de sesiones ::::::::::::::::::::::::::::::
+app.use(session({
+    secret: "clave secreta",
+    resave: false
+    , saveUninitialized: false
+   //, cookie: { secure: false
+
+}));
 
 // Configuración del motor de vistas ::::::::::::::::::::::::::
 app.set("view engine", "ejs");

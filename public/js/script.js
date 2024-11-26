@@ -59,6 +59,19 @@ window.addEventListener('click', (event) => {
     }
 });
 
+// script.js
+document.addEventListener("DOMContentLoaded", () => {
+    const contactBtn = document.getElementById("contact"); // Botón "Contáctanos"
+    const formContainer = document.getElementById("contact-form"); // Contenedor del formulario
+    
+    contactBtn.addEventListener("click", () => {
+        // Alternar visibilidad del formulario
+        formContainer.classList.toggle("contact-form");
+    });
+});
+
+    
+
 
 
 
